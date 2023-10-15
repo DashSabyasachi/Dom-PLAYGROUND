@@ -57,7 +57,7 @@
         <div id="insert">
             <input type="text" id="inputField" placeholder="Enter Sth..">
             <button id="AddBtn">Add</button>
-            <button id="ClsBtn" onclick="">ClearAll</button>
+            <button id="ClsBtn">ClearAll</button>
         </div>
     <hr/>...................................................................................
     <hr/>
@@ -70,19 +70,12 @@
         let insertData = document.getElementById('inputField')
         let AddBtn= document.getElementById('AddBtn')
         let taskField = document.getElementById('taskField')
+        let ClsBtn = document.getElementById('ClsBtn')
         let TaskArr=[]
         let data
         print()
 
-        insertData.addEventListener('keypress',(e)=>{
-            if(e.key === 'Enter'){
-                alert('Plz Enter sth before clicking Add button')
-            }
-            else{
-                
-            }
-        })
-
+        
         AddBtn.addEventListener('click',()=>{
             if(insertData.value){
                 if(data){
@@ -108,7 +101,7 @@
                 print()
             }
             else{
-                alert('Plz Enter sth before clicking Add button')
+                alert('Plz Enter sth before hit the Add button')
                 return
             }
         })
@@ -151,9 +144,15 @@ function editf(id){
     AddBtn.innerText = 'Save'
 }
 
-function clearAll(){
-    TaskArr.remove
-}
+
+ClsBtn.addEventListener('click',(id)=>{
+       let z = TaskArr.filter((data)=>{
+        return data.id == id
+       })
+       TaskArr = z
+       print()
+       // taskField.innerHTML = `<h3>No data found</h3>`
+})
 
     </script>
 </body>
