@@ -1,0 +1,49 @@
+
+body{
+    background: linear-gradient(pink, blue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#app{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20%;
+    border: 20px double black ;
+    display: inline-block;
+    padding: 50px;
+    position: relative;
+    left: 450px;
+    align-content: space-around;
+}
+#dataInput{
+    background-color: white;
+    color: BLACK;
+    padding: 5px;
+    border-radius: 10px;
+}
+#addData{
+    background-color: skyblue;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+.data-card{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    padding: 5px;
+}
+.edit{
+    background-color: greenyellow;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+.delete{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}

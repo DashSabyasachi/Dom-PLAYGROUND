@@ -1,0 +1,119 @@
+/* To-Do Styling */
+body{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(todoo.jpg);
+    background-size: cover;
+    /* background-image: linear-gradient(rgb(180, 180, 242),rgb(166, 249, 166)); */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#add-task-container{
+    width: 60%;
+    padding: 20px 10px;
+    background-color: wheat;
+    border-radius: 8px;
+    box-shadow: 0 0 12px;
+    display: flex;
+    margin-bottom: 20px;
+}
+input{
+    border: none;
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 8px;
+    box-shadow: 2px 2px 10px;
+}
+#add-task{
+    flex: 1;
+    border: none;
+    box-shadow: 2px 2px 4px;
+    font-size: 1.2rem;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#add-task:hover{
+    background-color: rgb(11, 142, 11);
+    color: white;
+    /* border: none; */
+    transition: 0.2s;
+
+}
+.task li{
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 1.3rem;
+    flex:4;
+    margin: 10px;
+    /* width: 70%; */
+}
+.task button{
+    flex: 1;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#task-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.task .editTask{
+    color: orange;
+    margin: 3px;
+    border: solid 2x orange;
+    font-size: 1.5rem;
+}
+.task .editTask:hover{
+    background-color: rgb(223, 145, 0);
+    color: white;
+}
+.task .deleteTask{
+    color: red;
+    margin: 3px;
+    border: solid 2x red;
+    font-size: 1.2rem;
+    transition: 0.15s;
+}
+.task .deleteTask:hover{
+    background-color: rgb(158, 0, 0);
+    color: white;
+    transition: 0.15s;
+}
+#task-container{
+    
+    display: flex;
+    justify-content: start;
+    row-gap: 15px;
+    column-gap: 15px;
+    flex-flow: row wrap;
+    /* border: 2px solid black; */
+}
+
+.id{
+    display: none;
+}
+
+.task{
+    width: 30%;
+    height: 80px;
+    background-color: #212121;
+    color: white;
+    border-radius: 12px;
+    /* box-shadow: 2px 2px 8px black; */
+    padding: 6px;
+    margin-bottom: 6px;
+
+    display: flex;
+    /* flex-direction: row wrap; */
+    justify-content: space-between;
+
+}

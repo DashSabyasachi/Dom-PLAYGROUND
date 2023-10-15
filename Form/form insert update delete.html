@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document.print</title>
+</head>
+<body>
+    <input type="text" id="insert" placeholder="Enter sth."/>
+    <button id="btn" onclick="docPrint()">Add</button>
+    <ul id="list" type=""></ul>    
+    <script>
+    let ul = document.querySelector('ul')
+    let li = document.createElement('li')
+    let i = 0
+    function docPrint(){
+    let arr = document.getElementById('insert')
+    let x = arr.value
+    if(x==""){
+        alert('plz Enter Sth..')
+    }
+    else{
+    name.value =""
+    ul.appendChild(li)    
+    i % 2===0?li.innerHTML += '<h1 style="color:red;">' + x + '<br></h1>': li.innerHTML += '<h1 style="color:blue;">' + x + '<br></h1>'
+    i++
+  }     
+}
+    
+    </script>
+</body>
+</html>
