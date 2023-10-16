@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .error{
-            color: red;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
       <h1>Form validation</h1>
       <hr>
       username:
       <input type="text" id="username" placeholder="Enter your name">
+      <div class="error" id="unError"></div>
       <br>
       password:
-      <input type="text" id="password" placeholder="Enter your password">
-      <input type="text" id="cnfrmPw" placeholder="Enter your confirm password">
+      <input type="password" id="password" placeholder="Enter your password">
+      <br>
+      confirm password:
+      <input type="password" id="cnfrmPw" placeholder="Enter your confirm password">
+      <div class="error" id="pwError"></div>
       <br>
       Mobile:
       <input type="number" id="mobile">
+      <div class="error" id="mobError"></div>
       <br>
       Gender:
       M<input type="radio" name="gender" id="m">
@@ -35,7 +37,7 @@
         <option value="next">next</option>
     </select>
     <br>
-    <button id="id">Submit</button>
-
+    <button id="btn">Submit</button>
+<script src="script.js"></script>
 </body>
 </html>
