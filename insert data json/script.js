@@ -20,7 +20,7 @@ function addJSONdata(){
     const SubmitBtn = document.getElementById('Submit-btn');
     SubmitBtn.addEventListener('click', storeData);
 
-     Inputdatafield = document.getElementById('data-field')
+    Inputdatafield = document.getElementById('data-field')
 }
 
 
